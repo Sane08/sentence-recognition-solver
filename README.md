@@ -1,21 +1,7 @@
-# SentenceRecognitionSolver
+# Reconhecimento de Cadeias em Elixir
 
-**TODO: Add description**
+Este código implementa o algoritmo de reconhecimento de cadeias geradas por uma gramática de estrutura de frase recursiva em Elixir por meio de funções recursivas.
 
-## Installation
+A atividade foi realizada como segundo Exercício Programa (EP2) para a disciplina PCS3556.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `sentence-recognition-solver` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:sentence-recognition-solver, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/sentence-recognition-solver>.
-
+O código utiliza uma série de funções para gerar uma lista completa de possíveis cadeias que podem ser geradas com a gramática especificada, levando-se em consideração o tamanho máximo da cadeia especificada, chamadas de dentro da função `sentenceGenerator`. Então, a presença ou não da cadeia especificada nesta lista é determinada pela `checkGrammarList`.
